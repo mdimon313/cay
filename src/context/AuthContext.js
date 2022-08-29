@@ -14,7 +14,7 @@ export const useAuth = () => {
 
 export function Provider({ children }) {
   const [loading, setLoading] = useState(true);
-  const [currentUser, setCurrentUser] = useState("imon");
+  const [currentUser, setCurrentUser] = useState("");
 
   useEffect(() => {
     const unsubcribe = onAuthStateChanged(auth, (user) => {
